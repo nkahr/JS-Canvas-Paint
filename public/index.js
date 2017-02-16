@@ -14,31 +14,6 @@ var app = function() {
   var canvas = document.querySelector("#main-canvas");
   var context = canvas.getContext("2d");
 
-  // context.strokeStyle = "dodgerBlue";
-
-  // context.fillStyle = 'green';
-  // context.fillRect(10, 10, 50, 50);
-  // context.fillRect(10, 100, 50, 50);
-
-  // context.beginPath();
-  // context.moveTo(200, 200);
-  // context.lineTo(200, 300);
-  // context.lineTo(100, 300);
-  // context.closePath();
-  // context.stroke(); 
-
-  // context.beginPath();
-  // context.arc(400, 400, 100, 0, Math.PI * 2, true); 
-  // context.stroke(); 
-
-  // var drawCircle = function(x,y) {
-  //   context.beginPath();
-  //   context.arc(x, y, 10, 0, Math.PI * 2, true); 
-  //   context.stroke();
-  // }
-
-
-
   populateDropDown();
 
   var eventListener = function(event) {
@@ -70,8 +45,8 @@ var app = function() {
 
   function getMousePos(canvas, event) {
     return {
-      x: event.clientX,//clientX - rect.left,
-      y: event.clientY//clientY - rect.top
+      x: event.x,
+      y: event.y
     };
   }
 
